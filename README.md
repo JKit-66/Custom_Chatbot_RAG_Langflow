@@ -12,5 +12,12 @@ The system ingests a user-provided document (e.g., a PDF document), processes it
 - **Dynamic Context Retrieval**: Uses vector similarity search in Astra DB to find the most relevant document chunks for any given query.
 - **Context-Aware Generation**: Injects retrieved context into prompts for the Gemini API to ensure answers are grounded in the source material and minimize hallucinations.
 
+## Getting Started
+1. Install Langflow and Dependencies
+2. Start the Langflow UI
+3. Import the Workflow by including the (`Custom_Cinema_QA_ChatBot.json`) file in the repository
+4. Fill in the API keys for your LLM (Gemini or OpenAI) and Azure OpenAI Embeddings, and the application token for your Astra DB
+4. Upload your custom document (`cinema_qa.pdf`) for information retrieval directly through the UI
+
 📄 License
 This project is licensed under the MIT License - see the ```LICENSE``` file for details.
